@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          PSO Algorithm
+          Particle Swarm Optimalization Algorithm (PSO)
         </p>
       </header>
       <Magic />
