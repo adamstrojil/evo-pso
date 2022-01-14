@@ -1,6 +1,29 @@
 import React from 'react';
 import './App.css';
-import { Magic } from './components/Magic';
+import { Main } from './components/Main';
+
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 
 function App() {
   return (
@@ -10,7 +33,7 @@ function App() {
           Particle Swarm Optimalization Algorithm (PSO)
         </p>
       </header>
-      <Magic />
+      <Main />
     </div>
   );
 }
